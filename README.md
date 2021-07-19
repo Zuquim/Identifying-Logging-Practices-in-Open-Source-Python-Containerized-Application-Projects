@@ -2,8 +2,8 @@
 In Brazilian Symposium on Software Engineering (SBES ’21), Septem-ber 27-October 1, 2021, Joinville, Brazil.
 
 ## Authors
-- Marco Túlio Resende Zuquim Alves
-- Hugo Bastos de Paula
+- [Marco Túlio Resende Zuquim Alves](https://github.com/Zuquim)
+- [Hugo Bastos de Paula](https://github.com/hugodepaula)
 
 ## DOI
 [`10.1145/3474624.3474631`](https://doi.org/10.1145/3474624.3474631)

@@ -1,0 +1,16 @@
+{
+  search(query: "<STARS_FILTER> language:Python is:public", type: REPOSITORY, first: 100, <AFTER_CURSOR>) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    repositoryCount
+    nodes {
+      ... on Repository {
+        nameWithOwner
+        url
+        stargazers { totalCount }
+      }
+    }
+  }
+}

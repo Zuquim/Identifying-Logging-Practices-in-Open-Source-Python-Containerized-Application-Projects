@@ -1,0 +1,28 @@
+{
+  search(query: "<REPO__OWNER_NAME> language:Python is:public", type: REPOSITORY, first: 1, after: null) {
+    nodes {
+      ... on Repository {
+        id
+        nameWithOwner
+        sshUrl
+        createdAt
+        updatedAt
+        isFork
+        isInOrganization
+        licenseInfo { name }
+        stargazers { totalCount }
+        watchers { totalCount }
+        forks { totalCount }
+        releases { totalCount }
+        commitComments { totalCount }
+        collaborators: collaborators { totalCount }
+        collaboratorsDirect: collaborators(affiliation: DIRECT) { totalCount }
+        collaboratorsOutside: collaborators(affiliation: OUTSIDE) { totalCount }
+        pullRequests: pullRequests { totalCount }
+        pullRequestsOpen: pullRequests(states: OPEN) { totalCount }
+        issues: issues { totalCount }
+        issuesOpen: issues(states: OPEN) { totalCount }
+      }
+    }
+  }
+}
